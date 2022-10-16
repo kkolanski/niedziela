@@ -24,8 +24,7 @@ class RejestracjaNowegoUzytkownika(unittest.TestCase):
         # WARUNKI WSTĘPNE
         # 1. Otwarta strona główna
         # self.driver = webdriver.Chrome()
-        self.driver = webdriver.Remote(command_executor='http://127.0.0.1:4444/wd/hub', desired_capabilities=DesiredCapabilities.EDGE)
-        self.driver.maximize_window()
+        self.driver = webdriver.Firefox()
         self.driver.get("https://www.eobuwie.com.pl/")
         # (2. Użytkownik niezalogowany)
         # Zamknij alert o ciasteczkach
